@@ -45,6 +45,12 @@ Press calc button =
 Press calc button C
     press calc button  clearButton
 
+Press calc button *
+    press calc button  multiplyButton
+
+Press calc button /
+    press calc button  divideButton
+
 close calculator
     press calc button  Close
 
