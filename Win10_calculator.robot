@@ -1,6 +1,5 @@
 *** Settings ***
 Documentation    Suite description
-Library  Win10_calculator.py
 Resource  Win10_calc_resource.robot
 Test Setup  start calculator
 
@@ -22,6 +21,25 @@ Test Case 2 minus calculation
     check calculator total  4
     Press calc button C
 
-Test case X Close calculator
+Test Case 3 multiply
+    [Setup]
+    press calc button 5
+    press calc button *
+    press calc button 2
+    press calc button =
+    check calculator total  10
+    press calc button c
+
+Test case 4 divide
+    [Setup]
+    press calc button 1
+    press calc button 2
+    press calc button /
+    press calc button 2
+    press calc button =
+    check calculator total  6
+    press calc button C
+
+Test case Close calculator
     [Setup]
     close calculator
