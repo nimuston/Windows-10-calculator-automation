@@ -1,5 +1,6 @@
 import pywinauto
 import time
+import os
 
 
 def start_calculator():
@@ -28,3 +29,9 @@ def CheckResults():
         amount += element
     # parse amount from string
     return amount[11:]
+
+
+def killandrestart():
+    os.system("TASKKILL /F /IM Calculator.exe")
+    start_calculator()
+

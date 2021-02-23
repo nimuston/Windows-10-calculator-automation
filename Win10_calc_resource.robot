@@ -58,3 +58,6 @@ Check calculator total
     [Arguments]  ${totalamount}
     ${total}  CheckResults
     should be equal  ${totalamount}  ${total}
+
+Restart calculator
+    killandrestart

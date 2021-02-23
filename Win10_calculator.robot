@@ -2,6 +2,7 @@
 Documentation    Suite description
 Resource  Win10_calc_resource.robot
 Test Setup  start calculator
+Test Teardown  Run Keyword If Test Failed  Restart calculator
 
 *** Test Cases ***
 Test case 1 plus calculation
@@ -9,7 +10,7 @@ Test case 1 plus calculation
     press calc button +
     press calc button 1
     press calc button =
-    check calculator total  6
+    check calculator total  60
     press calc button c
 
 Test Case 2 minus calculation
