@@ -10,7 +10,7 @@ Test case 1 plus calculation
     press calc button +
     press calc button 1
     press calc button =
-    check calculator total  60
+    check calculator total  6
     press calc button c
 
 Test Case 2 minus calculation
