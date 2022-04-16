@@ -41,6 +41,22 @@ Test case 4 divide
     check calculator total  6
     press calc button C
 
+Test case 5 plus, minus, multiply and divide
+    [setup]
+    press calc button 6
+    press calc button +
+    press calc button 7
+    press calc button -
+    press calc button 8
+    press calc button *
+    press calc button 1
+    press calc button 0
+    press calc button /
+    press calc button 2
+    press calc button =
+    check calculator total  25
+    press calc button c
+
 Test case Close calculator
     [Setup]
     close calculator
